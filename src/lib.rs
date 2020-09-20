@@ -1,15 +1,15 @@
 use gdnative::prelude::*;
 
 #[derive(NativeClass)]
-#[inherit(Object)]
+#[inherit(Node)]
 pub struct Constants;
 
 #[methods]
 impl Constants {
-    pub fn new(_owner: &Object) -> Self { Constants {} }
+    pub fn new(_owner: &Node) -> Self { Constants }
 
     #[export]
-    pub fn some_constant(&self, _owner: &Object) -> i32 { 42 }
+    pub fn some_constant(&self, _owner: &Node) -> i32 { 42 }
 }
 
 fn init(handle: InitHandle) {
