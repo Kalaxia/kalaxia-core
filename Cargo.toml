@@ -1,13 +1,5 @@
-[package]
-name = "kalaxia-core"
-version = "0.1.0"
-authors = ["iona <arthur.blanleuil@inria.fr>"]
-edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-gdnative = "0.9.0-preview.0"
-
-[lib]
-crate-type = ["cdylib"]
+[workspace]
+members = [
+  "kalaxia-core",
+  "kalaxia-core-godot",
+]
